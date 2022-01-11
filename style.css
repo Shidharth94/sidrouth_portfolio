@@ -45,8 +45,8 @@ section {
 
 @media all and (max-width: 500px) {
     section {
-        padding-left:  10vw;
-        padding-right:  10vw;
+        padding-left:  8vw;
+        padding-right:  8vw;
     }
 }
 
@@ -58,7 +58,7 @@ section {
 
 @media all and (max-width: 600px) {
     .heading {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }
 

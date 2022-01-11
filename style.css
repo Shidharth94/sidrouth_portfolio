@@ -43,6 +43,27 @@ section {
     padding-right:  15vw;
 }
 
+/* cursor */
+
+.heading {
+    display: flex;
+}
+
+.heading svg {
+    width: 10px;
+    color: white;
+    margin-left: 0rem;
+    z-index: 1;
+    animation: ani-cur 0.7s infinite alternate;
+}
+
+@keyframes ani-cur{
+    0% {rotate: 0deg;}
+    100% {rotate: -90deg;}
+}
+
+/* cursor */
+
 /* jiggly lines */
 
 .spacer {

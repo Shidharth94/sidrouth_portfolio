@@ -51,20 +51,27 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    vertical-align: top;
 }
 
 .layer1 {
     background-image: url(waves/col1.svg);
+    border-top: 2px solid #d96459;
+    border-bottom: 2px solid #f2ae72;
 }
 .layer2 {
     background-image: url(waves/col2.svg);
+    border-top: 2px solid #f2ae72;
+    border-bottom: 2px solid #a2836e;
 }
 .layer3 {
     background-image: url(waves/col3.svg);
+    border-top: 2px solid #a2836e;
+    border-bottom: 2px solid #588c7e;
 }
 .layer4 {
     background-image: url(waves/col4.svg);
+    border-top: 2px solid #588c7e;
+    border-bottom: 2px solid #622569;
 }
 
 /* jiggly lines */

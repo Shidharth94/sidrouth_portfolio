@@ -43,17 +43,22 @@ section {
     padding-right:  15vw;
 }
 
+@media all and (max-width: 500px) {
+    section {
+        padding-left:  10vw;
+        padding-right:  10vw;
+    }
+}
+
 /* cursor */
 
-.heading h4{
+.heading {
+    font-size: 0.8rem;
     display: flex;
 }
 
-span {
-    height: 100%;
-}
-
 .heading svg {
+    margin-top: 0;
     width: 10px;
     color: white;
     margin-left: 0rem;

@@ -30,6 +30,8 @@ body {
     min-height: 100vh;
 }
 
+/**************************************************************************************************************************************************/
+
 main {
     margin-left: 6rem;
 }
@@ -484,3 +486,71 @@ table {
 }
 
 /* skills */
+
+/**************************************************************************************************************************************************/
+
+/* wrapper */
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.edu {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    color: black;
+}
+
+.edu::before {
+    content: ' ';
+    position: absolute;
+    width: 100px;
+    height: 130%;
+    background: linear-gradient(skyblue, magenta);
+    animation: educ 4s linear infinite;
+}
+
+.edu::after {
+    content: ' ';
+    position: absolute;
+    background: #f2ae72;
+    inset: 4px;
+    border-radius: 16px;
+}
+
+@keyframes educ {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.edu h1 {
+    font-size: 2.5rem;
+}
+
+.edu p {
+    text-align: center;
+    padding: 0 0.5rem;
+    padding-top: 2rem;
+    font-size: 1rem;
+}
+
+.edu:nth-child(3) p, .edu:nth-child(4) p {
+    text-align: center;
+    padding: 0 0.5rem;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+}
+/* wrapper */

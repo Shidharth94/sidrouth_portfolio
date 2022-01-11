@@ -112,9 +112,16 @@ section {
     }
 }
 
-@media all and (max-width: 650px) {
+@media all and (min-width: 500px) {
+    .blob-motion{
+        width: 320px;
+        transform:  translateY(-70%);
+    }
+}
+
+@media all and (max-width: 500px) {
     .blob-motion {
-        width: 55vw;
+        width: 70vw;
         transform:  translateY(-70%);
     }
 }

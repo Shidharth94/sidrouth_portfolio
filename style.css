@@ -491,6 +491,10 @@ table {
 
 /* wrapper */
 
+.col2 {
+    color: black;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;

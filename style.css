@@ -45,8 +45,12 @@ section {
 
 /* cursor */
 
-.heading {
+.heading h4{
     display: flex;
+}
+
+span {
+    height: 100%;
 }
 
 .heading svg {
@@ -147,7 +151,7 @@ section {
     }
 }
 
-h1, p, h3 {
+h1, p, h3, h4 {
     position: relative;
     z-index: 1;
 }

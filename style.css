@@ -53,12 +53,26 @@ section {
 /* cursor */
 
 .heading {
-    font-size: 0.8rem;
     display: flex;
 }
 
+@media all and (max-width: 500px) {
+    .heading {
+        font-size: 0.8rem;
+    }
+}
+
+.heading h1{
+    display: flex;
+}
+
+.heading h1:first-child {
+    align-items: center;
+}
+
+
 .heading svg {
-    margin-top: 0;
+    padding-top: 0;
     width: 10px;
     color: white;
     margin-left: 0rem;

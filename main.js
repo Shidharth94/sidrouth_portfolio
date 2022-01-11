@@ -1,6 +1,6 @@
 const typedTextSpan = document.querySelector(".typed-text");
 
-const textArray = ["Welcome fellow web surfers !!","I'm Shidharth  Routh.", "I'm a Research Enthusiast.", "I've a keen interest in GIS and..", "..it's Deep Learning applications.", "I like scripting.", "I love learning new concepts..", "..and applying them to projects."];
+const textArray = ["Welcome fellow web surfers !!","I'm Shidharth  Routh.", "I'm a Research Enthusiast.", "I've a keen interest in GIS and..", "..it's Deep Learning applications.", "I like writing scripts.", "I love learning new concepts..", "..and applying them to projects."];
 const typingDelay = 100;
 const erasingDelay = 100;
 const newTextDelay = 2500;

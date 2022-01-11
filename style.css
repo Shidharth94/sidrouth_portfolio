@@ -126,7 +126,7 @@ section {
     }
 }
 
-h1, p {
+h1, p, h3 {
     position: relative;
     z-index: 1;
 }

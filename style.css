@@ -122,7 +122,7 @@ section {
 @media all and (max-width: 500px) {
     .blob-motion {
         width: 70vw;
-        transform:  translateY(-70%);
+        transform:  translateY(-80%);
     }
 }
 

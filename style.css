@@ -38,9 +38,14 @@ main {
 section {
     position: relative;
     align-items: center;
-    padding: 8vh 0;
+    padding-top: 8vh;
+    padding-bottom: 0;
     padding-left:  15vw;
     padding-right:  15vw;
+}
+
+section:last-child {
+    padding-bottom: 7rem;
 }
 
 @media all and (max-width: 500px) {
@@ -159,14 +164,14 @@ section {
 @media all and (min-width: 500px) {
     .blob-motion{
         width: 320px;
-        transform:  translateY(-70%);
+        transform:  translateY(-60%);
     }
 }
 
 @media all and (max-width: 500px) {
     .blob-motion {
         width: 70vw;
-        transform:  translateY(-80%);
+        transform:  translateY(-50%);
     }
 }
 
@@ -472,5 +477,10 @@ table {
     text-align: center;
 }
 
+.resume {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
 
 /* skills */

@@ -332,89 +332,6 @@ h1, p, h3, h4 {
 
 /* hover */
 
-.container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: fit-content;
-    margin-top: 10px;
-    justify-content: space-around;
-    text-align: center;
-}
-
-@media all and (max-width: 650px) {
-    .container {
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .col5 > * {
-        justify-content: space-between;
-    }
-}
-
-
-.contact-left {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 60%;
-    background-color: blanchedalmond;
-    padding: 20px;
-    color: black;
-}
-.contact-right {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 40%;
-    background-color: crimson;
-    padding: 20px;
-}
-
-/* details */
-
-.details > *, .content > *{
-    display: flex;
-    flex-direction: column;
-}
-
-.details > * :nth-child(1), .content > * :nth-child(1) {
-    margin: 10px;
-}
-
-button {
-    background-color: crimson;
-    color: white;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 30px;
-    box-shadow: 5px 5px 8px rgba(0 0 0 1);
-}
-
-/* details */
-
-/* table */
-
-tr td:first-child {
-    padding-right: 20px;
-}
-
-tr td {
-    font-size: 1rem;
-    padding-top: 20px;
-}
-
-table {
-    padding: 15vh 0;
-}
-
-@media all and (max-width: 650px) {
-    table {
-        padding: 3vh 0;
-    }
-}
-
-/* table*/
-
 /* skills */
 
 .skill-name {
@@ -558,3 +475,217 @@ table {
     font-size: 1rem;
 }
 /* wrapper */
+
+/* socials */
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.social-ul > * {
+    justify-content: space-evenly;
+    margin: 0 0.5rem;
+}
+
+.social-ul li {
+    flex: 0 1 30%;
+    height: 70px;
+    width: 70px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white;
+    border-radius: 50px;
+    margin: 1rem 0.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+.social-ul svg {
+    width: 40px;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+
+.social-ul li:hover {
+    background: white;
+    border-radius: 100px;
+    transform: scale(1.2);
+    transition: 0.1s ease-in-out;
+}
+
+.social-ul li:hover svg {
+    transform: scale(0.7);
+}
+
+.social-ul .whatsapp:hover svg {
+    color: #25D366;
+}
+.social-ul .whatsapp:hover::after {
+    color: black;
+    content: 'whatsapp';
+    font-size: 0.7rem;
+    padding-bottom: 0.8rem;
+}
+
+.social-ul .youtube:hover svg {
+    color: #FF0000;
+}
+.social-ul .youtube:hover::after {
+    color: black;
+    content: 'youtube';
+    font-size: 0.7rem;
+    padding-bottom: 0.8rem;
+}
+
+.social-ul .linkedin:hover svg {
+    color: #0077b5;
+}
+.social-ul .linkedin:hover::after {
+    color: black;
+    content: 'linkedin';
+    font-size: 0.7rem;
+    padding-bottom: 0.8rem;
+}
+
+.social-ul .twitter:hover svg {
+    color: #1DA1F2;
+}
+.social-ul .twitter:hover::after {
+    color: black;
+    content: 'twitter';
+    font-size: 0.7rem;
+    padding-bottom: 0.8rem;
+}
+
+.social-ul .instagram:hover svg {
+    color: #bc2a8d;
+}
+.social-ul .instagram:hover::after {
+    color: black;
+    content: 'instagram';
+    font-size: 0.7rem;
+    padding-bottom: 0.8rem;
+}
+
+.social-ul .mail:hover svg {
+    color: #FF8C00;
+}
+.social-ul .mail:hover::after {
+    color: black;
+    content: 'mail';
+    font-size: 0.7rem;
+    padding-bottom: 0.8rem;
+}
+
+
+/* socials */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact me */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+@media all and (max-width: 650px) {
+    .container {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .col5 > * {
+        justify-content: space-between;
+    }
+}
+
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    background-color: blanchedalmond;
+    padding: 20px;
+    color: black;
+}
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    background-color: crimson;
+    padding: 20px;
+}
+
+/* details */
+
+.details > *, .content > *{
+    display: flex;
+    flex-direction: column;
+}
+
+.details > * :nth-child(1), .content > * :nth-child(1) {
+    margin: 10px;
+}
+
+button {
+    background-color: crimson;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 8px rgba(0 0 0 1);
+}
+
+/* details */
+
+/* table */
+
+tr td:first-child {
+    padding-right: 20px;
+}
+
+tr td {
+    font-size: 1rem;
+    padding-top: 20px;
+}
+
+table {
+    padding: 15vh 0;
+}
+
+@media all and (max-width: 650px) {
+    table {
+        padding: 3vh 0;
+    }
+}
+
+/* table*/

@@ -53,8 +53,8 @@ section:last-child {
 
 @media all and (max-width: 500px) {
     section {
-        padding-left:  8vw;
-        padding-right:  8vw;
+        padding-left:  5vw;
+        padding-right:  5vw;
     }
 }
 
@@ -250,6 +250,7 @@ h1, p, h3, h4 {
     main {
         margin-left: 13rem;
     }
+    
     .navbar {
         width: 13rem;
         padding-right: 1.5rem;
@@ -273,8 +274,8 @@ h1, p, h3, h4 {
 @media all and (min-width: 600px) {
 
     section {
-        padding-left:  10vw;
-        padding-right:  10vw;
+        padding-left:  2vw;
+        padding-right:  2vw;
     }
 
 
@@ -679,6 +680,7 @@ h1, p, h3, h4 {
 .group-proj {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project {

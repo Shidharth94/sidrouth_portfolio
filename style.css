@@ -566,7 +566,7 @@ h1, p, h3, h4 {
 
 .social-ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     flex-wrap: wrap;

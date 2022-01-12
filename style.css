@@ -515,14 +515,14 @@ h1, p, h3, h4 {
 .social-ul svg {
     width: 30px;
     color: black;
-    transition: 0.2s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .social-ul li:hover {
     background: white;
     border-radius: 100px;
     transform: scale(1.2);
-    transition: 0.1s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .social-ul li:hover svg {

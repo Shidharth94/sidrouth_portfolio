@@ -374,6 +374,10 @@ h1, p, h3, h4 {
     position: relative;
 }
 
+.intro span {
+    background: transparent;
+}
+
 .intro span:nth-child(1) {
     position: absolute;
     top: 0;

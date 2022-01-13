@@ -722,7 +722,7 @@ h1, p, h3, h4 {
     left: 0;
     bottom: 0;
     content: ' ';
-    background: linear-gradient(transparent, #f3f2ed);
+    background: linear-gradient( rgba(243, 242, 237, 0), rgba(243, 242, 237, 0.5),  rgba(243, 242, 237, 1));
     width: 100%;
     height: 100px;
     z-index: 2;

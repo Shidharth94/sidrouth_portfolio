@@ -682,22 +682,106 @@ h1, p, h3, h4 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-.project {
+.group-proj .project {
+    position: relative;
     margin: 0.2rem 0.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    width: 290px;
-    height: auto;
+    width: 300px;
     border-radius: 10px;
     padding: 0.3rem 0.5rem;
     background: #f3f2ed;
     color: #314837;
     box-shadow: -6px -6px 20px rgba(255, 255, 255, 0.1), 
     6px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project .pro-cont {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.project.active .pro-cont {
+    height: auto;
+}
+
+.project .pro-img {
+    position: relative;
+}
+
+.project .pro-cont::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: ' ';
+    background: linear-gradient(transparent, #f3f2ed);
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+}
+
+.project.active .pro-cont::before {
+    background: transparent;
+}
+
+/* .project .more {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    background: linear-gradient(transparent, #f3f2ed);
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 1;
+} */
+
+.project .more {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+    padding: 10px 15px;
+    border-radius: 40px;
+    background: #f3f2ed;
+    color: #314837;
+    box-shadow: -4px -4px 15px rgba(255, 255, 255, 1), 
+    4px 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.project.active .more {
+    background: #C62368;
+    color: white;
+}
+
+.project .more:hover {
+    box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5), 
+    inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project.active .more:hover {
+    box-shadow: inset -4px -4px 10px rgba(198, 35, 104, 0.5), 
+    inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project .more::before {
+    content: 'read more';
+}
+
+.project.active .more::before {
+    content: 'read less';
 }
 
 .pro-img svg {

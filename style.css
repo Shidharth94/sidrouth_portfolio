@@ -674,7 +674,7 @@ h1, p, h3, h4 {
 /*************************************************************************************************************************************************/
 
 .col3 {
-    padding-bottom: 50px;
+    padding-bottom: 5px;
 }
 
 .group-proj {
@@ -796,6 +796,47 @@ h1, p, h3, h4 {
 .project:hover .pro-img, .project:hover .pro-cont {
     transform: scale(0.98);
 }
+
+/* youtube */
+
+.youtube-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.vid-cont {
+    flex: 0 1 25%;
+    width: 310px;
+    height: auto;
+    background: #282828;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1rem 0.1rem;
+}
+
+.vid {
+    width: 300px;
+    height: 169px;
+    margin: 0;
+}
+
+.vid-details {
+    background: #282828;
+    color: #ffffff;
+    width: 300px;
+    height: 180px;
+    margin-bottom: 0.2rem;
+    text-align: left;
+    padding: 0.2rem;
+}
+
+/* youtube */
 
 /*************************************************************************************************************************************************/
 

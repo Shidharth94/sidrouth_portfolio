@@ -303,17 +303,80 @@
                         </svg>
                     </div><br>
                     <div class="pro-cont">
-                        <h3>3D Terrain Modelling of College (Haldia Institute of Technology ) Campus using Remote Sensing and GIS based approach</h3><br>
+                        <h3>3D Terrain Modelling of College (Haldia Institute of Technology ) Campus using Remote
+                            Sensing and GIS based approach</h3><br>
                         <h4>B-Tech </h4>
                         <p>( Haldia Institute of Technology )</p><br>
                         <h5>from July 2016 to February 2017 </h5><br>
-                        <p>Google Earth was used to collect satellite images of the college campus. ArcMap was used for georeferencing, modelling of the campus and terrain,
-                            exporting files for visualization in Google Earth and for generating the final video of the modelled campus.
+                        <p>Google Earth was used to collect satellite images of the college campus. ArcMap was used for
+                            georeferencing, modelling of the campus and terrain,
+                            exporting files for visualization in Google Earth and for generating the final video of the
+                            modelled campus.
                             Google Sketchup was used for cosmetic visualization of the campus.</p>
                     </div>
                     <a class="more"></a>
                 </div>
 
+            </div>
+
+            <br>
+            <p>Demo videos of my personal projects.</p><br>
+
+            <div class="youtube-cont">
+
+                <div class="vid-cont">
+                    <div class="vid">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DL8_xwkd5sc"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="vid-details">
+                        <p>A basic marketplace GUI based on python's tkinter and pandas module.</p>
+                    </div>
+                </div>
+
+                <div class="vid-cont">
+                    <div class="vid">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wx9w9kXizt8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="vid-details">
+                        <p>First iteration of satellite image stacking GUI based on python's tkinter, matplotlib and rasterio modules. Image bands are choosen and all possible 3 band configurations
+                            are created in the form of buttons. Each button gives a differrent 3 band rgb stack .</p>
+                    </div>
+                </div>
+
+                <div class="vid-cont">
+                    <div class="vid">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4rcz_4ftyhQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="vid-details">
+                        <p>A custom Multi-Layer Perceptron builder and visualizer based on python's tkinter, matplotlib and tensorflow modules. The app generates MLP model based on the
+                            customizations by the user. The user can customize the dimesion of input, output as well as hidden layer(s) to create the model and then visualize it. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="vid-cont">
+                    <div class="vid">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/b-rr47dCwv4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="vid-details">
+                        <p>The second iteration of satellite image stacking GUI based on python's tkinter, matplotlib and rasterio modules. This version takes image bands and gives it's users freedom 
+                            to generate a specific rgb stack and then visualize it.
+                        </p>
+                    </div>
+                </div>
+                
             </div>
         </section>
         <div class="spacer layer3">
@@ -392,8 +455,8 @@
     </main>
     <script>
         let more = document.querySelectorAll('.more');
-        for(let i = 0; i < more.length;  i++) {
-            more[i].addEventListener('click', function() {
+        for (let i = 0; i < more.length; i++) {
+            more[i].addEventListener('click', function () {
                 more[i].parentNode.classList.toggle('active')
             })
         }

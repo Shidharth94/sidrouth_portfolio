@@ -680,7 +680,7 @@ h1, p, h3, h4 {
 .group-proj {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: relative;
 }

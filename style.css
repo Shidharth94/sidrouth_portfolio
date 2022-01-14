@@ -681,77 +681,79 @@ h1, p, h3, h4 {
 .col5 {
     overflow: hidden;
     height: 500px;
-    bottom: 5rem;
 }
 
 .icon-wrap {
-    position: relative;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     list-style: none;
+    overflow: hidden;
+    padding: 1px;
 }
 
 .icon-wrap .socials {
-    top: -50;
-    display: flex;
-    flex-direction: column;
-    padding: 5px 0;
-    white-space: nowrap;
-    transform: rotate(-30deg);
-    position: relative;
-}
-
-.icon-wrap .socials div {
+    flex: 1 1 100%;
+    padding: 1px 0;
+    margin-top: 0;
+    top: -100%;
     width: 100%;
     white-space: nowrap;
+    display: flex;
+    position: relative;
+    transform: rotate(-30deg);
 }
 
 .icon-wrap .socials div {
-    animation: move-side 40s linear infinite;
-    animation-delay: -20s;
+    display: flex;
+    animation: move-side 80s linear infinite;
+    animation-delay: -40s;
 }
 
 .icon-wrap .socials div:nth-child(2) {
-    animation: move-side2 40s linear infinite;
-    animation-delay: -10s;
-}
-
-.icon-wrap .socials:nth-child(even) div {
-    animation: move-side3 40s linear infinite;
-    animation-delay: -20s;
-}
-
-.icon-wrap .socials:nth-child(even) div:nth-child(2) {
-    animation: move-side4 40s linear infinite;
-    animation-delay: -10s;
+    display: flex;
+    animation: move-side2 80s linear infinite;
+    animation-delay: 0s;
 }
 
 @keyframes move-side {
-    0% {transform: translateX(150%);}
-    100% {transform: translateX(-50%);}
+    0% {transform: translateX(100%);}
+    100% {transform: translateX(-100%);}
 }
 
 @keyframes move-side2 {
-    0% {transform: translateX(50%);}
+    0% {transform: translateX(0%);}
     100% {transform: translateX(-200%);}
 }
 
+.icon-wrap .socials:nth-child(even) div {
+    display: flex;
+    animation: move-side3 80s linear infinite;
+    animation-delay: 0s;
+}
+
+.icon-wrap .socials:nth-child(even) div:nth-child(2) {
+    display: flex;
+    animation: move-side4 80s linear infinite;
+    animation-delay: -40s;
+}
 
 @keyframes move-side3 {
-    0% {transform: translateX(-50%);}
-    100% {transform: translateX(150%);}
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(100%);}
 }
 
 @keyframes move-side4 {
     0% {transform: translateX(-200%);}
-    100% {transform: translateX(50%);}
+    100% {transform: translateX(0%);}
 }
 
-.socials div {
+
+.socials > * {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .socials li {
@@ -759,7 +761,7 @@ h1, p, h3, h4 {
 }
 
 .socials svg {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.1);
     width: 64px;
     transition: 1s;
     user-select: none;

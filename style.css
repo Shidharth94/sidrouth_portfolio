@@ -765,7 +765,7 @@ h1, p, h3, h4 {
     user-select: none;
 }
 
-.socials svg:hover {
+.socials svg:hover, .socials svg:focus, .socials svg:active {
     transition: 0s;
     color: #39FF14;
     filter: drop-shadow(0 0 7px #39FF14) ;

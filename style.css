@@ -198,6 +198,8 @@ h1, p, h3, h4 {
     z-index: 1;
 }
 
+/**********************************************************************************************************************************/
+
 /* navbar */
 
 .navbar {
@@ -205,7 +207,7 @@ h1, p, h3, h4 {
     height: 100vh;
     position: fixed;
     border: 1px solid black;
-    z-index: 2;
+    z-index: 1000;
     background-color: black;
     background-image: var(--gradient);
     background-size: 30rem;

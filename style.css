@@ -29,6 +29,7 @@ html {
 body {
     width: 100%;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 /**************************************************************************************************************************************************/
@@ -677,10 +678,16 @@ h1, p, h3, h4 {
 
 /* socials */
 
+.col5 {
+    overflow: hidden;
+    height: 500px;
+    bottom: 5rem;
+}
+
 .icon-wrap {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -688,17 +695,17 @@ h1, p, h3, h4 {
 }
 
 .icon-wrap .socials {
-    top: -50%;
-    position: relative;
+    top: -50;
     display: flex;
     flex-direction: column;
-    width: 100%;
     padding: 5px 0;
     white-space: nowrap;
     transform: rotate(-30deg);
+    position: relative;
 }
 
 .icon-wrap .socials div {
+    width: 100%;
     white-space: nowrap;
 }
 
@@ -723,24 +730,24 @@ h1, p, h3, h4 {
 }
 
 @keyframes move-side {
-    0% {transform: translateX(100%);}
-    100% {transform: translateX(-100%);}
+    0% {transform: translateX(150%);}
+    100% {transform: translateX(-50%);}
 }
 
 @keyframes move-side2 {
-    0% {transform: translateX(0%);}
+    0% {transform: translateX(50%);}
     100% {transform: translateX(-200%);}
 }
 
 
 @keyframes move-side3 {
-    0% {transform: translateX(-100%);}
-    100% {transform: translateX(100%);}
+    0% {transform: translateX(-50%);}
+    100% {transform: translateX(150%);}
 }
 
 @keyframes move-side4 {
     0% {transform: translateX(-200%);}
-    100% {transform: translateX(0%);}
+    100% {transform: translateX(50%);}
 }
 
 .socials div {

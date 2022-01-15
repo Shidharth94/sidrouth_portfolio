@@ -912,12 +912,6 @@ h1, p, h3, h4 {
     color: red;
 }
 
-@media all and (max-width: 800px) {
-
-    .paper-cont .paper {
-        width: 200px;
-    }
-}
 
 .paper-cont:nth-child(odd) div {
     position: relative;
@@ -927,6 +921,18 @@ h1, p, h3, h4 {
 .paper-cont:nth-child(even) div {
     position: relative;
     right: 50px;
+}
+
+@media all and (max-width: 800px) {
+
+    .paper-cont .paper {
+        width: 200px;
+    }
+
+    .paper-cont{
+        position: relative;
+        left: 10px;
+    }
 }
 
 .year {

@@ -887,12 +887,8 @@ h1, p, h3, h4 {
     margin-top: 5px;
     margin-bottom: 5px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
-}
-
-.timeline .paper-cont:nth-child(even) {
-    justify-content: right;
 }
 
 .paper-cont > * {
@@ -903,7 +899,7 @@ h1, p, h3, h4 {
     font-family: 'Cedarville Cursive', cursive;
     text-align:start;
     color: black;
-    width: 300px;
+    width: 100%;
     height: auto;
     padding: 5px;
 }
@@ -912,37 +908,6 @@ h1, p, h3, h4 {
     color: red;
 }
 
-
-.paper-cont:nth-child(odd) div {
-    position: relative;
-    left: 10px;
-}
-
-.paper-cont:nth-child(even) div {
-    position: relative;
-    right: 50px;
-}
-
-@media all and (max-width: 800px) {
-
-    .paper-cont .paper {
-        width: 200px;
-    }
-
-    .paper-cont{
-        position: relative;
-        left: 10px;
-    }
-}
-
-.year {
-    position: relative;
-    width: 50px;
-    padding: 5px;
-    display: flex;
-    font-family: 'Cedarville Cursive', cursive;
-    color: black;
-}
 
 /* publications */
 

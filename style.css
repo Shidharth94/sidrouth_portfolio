@@ -36,7 +36,7 @@ body {
 /**************************************************************************************************************************************************/
 
 main {
-    margin-left: 12rem;
+    margin-left: 8rem;
 }
 
 
@@ -166,7 +166,7 @@ h1, p, h3, h4 {
 /* navbar */
 
 .navbar {
-    width: 12rem;
+    width: 8rem;
     height: 100vh;
     position: fixed;
     border: 1px solid #f3f2ed;
@@ -196,6 +196,7 @@ h1, p, h3, h4 {
 
 .navbar .containerNav .nav-link {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -394,6 +395,7 @@ h1, p, h3, h4 {
 }
 
 .skills {
+    margin-top: 20px;
     display: flex;
     z-index: 1;
     justify-content: center;
@@ -524,6 +526,10 @@ h1, p, h3, h4 {
 /* wrapper */
 
 /* resume */
+
+.resume {
+    margin-top: 20px;
+}
 
 .resume button {
     cursor: pointer;
@@ -853,7 +859,86 @@ h1, p, h3, h4 {
 
 /*************************************************************************************************************************************************/
 
+/* publications */
 
+.col4 {
+    color: black;
+}
+
+.timeline {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(waves/paper.jpg);
+    background-size: cover;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3),
+     -5px -0px 10px rgba(0, 0, 0, 0.3),
+     5px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.timeline .paper-cont {
+    width:100%;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.timeline .paper-cont:nth-child(even) {
+    justify-content: right;
+}
+
+.paper-cont > * {
+    margin: 0 5px;
+}
+
+.paper-cont .paper {
+    font-family: 'Cedarville Cursive', cursive;
+    text-align:start;
+    color: black;
+    width: 300px;
+    height: auto;
+    padding: 5px;
+}
+
+.paper a {
+    color: red;
+}
+
+@media all and (max-width: 800px) {
+
+    .paper-cont .paper {
+        width: 200px;
+    }
+}
+
+.paper-cont:nth-child(odd) div {
+    position: relative;
+    left: 10px;
+}
+
+.paper-cont:nth-child(even) div {
+    position: relative;
+    right: 50px;
+}
+
+.year {
+    position: relative;
+    width: 50px;
+    padding: 5px;
+    display: flex;
+    font-family: 'Cedarville Cursive', cursive;
+    color: black;
+}
+
+/* publications */
 
 
 

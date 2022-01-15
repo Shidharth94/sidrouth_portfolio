@@ -868,7 +868,7 @@ h1, p, h3, h4 {
 .timeline {
     width: 100%;
     height: auto;
-    margin: auto;
+    margin-top: 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -891,17 +891,30 @@ h1, p, h3, h4 {
     transition: 0.5s;
 }
 
-.paper-cont:nth-child(odd) {
+.paper-cont:nth-child(1) {
     transform: rotate(-2deg);
 }
-
-.paper-cont:nth-child(even) {
-    transform: rotate(2deg);
+.paper-cont:nth-child(2) {
+    margin-top: -50px;
+    transform: rotate(5deg);
 }
+.paper-cont:nth-child(3) {
+    margin-top: -50px;
+    transform: rotate(-10deg);
+}
+.paper-cont:nth-child(4) {
+    margin-top: -50px;
+    transform: rotate(20deg);
+}
+.paper-cont:nth-child(5) {
+    margin-top: -50px;
+    transform: rotate(-5deg);
+}
+
 
 .paper-cont:hover {
     transition: 0s;
-    transform: rotate(0deg);
+    transform: rotate(0deg) scale(1.2);
     z-index: 10;
 }
 
